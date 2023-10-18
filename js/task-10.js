@@ -11,7 +11,7 @@ const destroyButton = controls.querySelector('button[data-destroy]');
 const boxesContainer = document.querySelector('#boxes');
 
 createButton.addEventListener('click', () => createBoxes(input.value));
-destroyButton.addEventListener('click', destroyBoxes);
+destroyButton.addEventListener('click', () => destroyBoxes());
 
 function createBoxes(amount) {
   const initialSize = 30;
